@@ -91,11 +91,11 @@ To work with the data, you have two options:
         ```
 
 
-For the estimation of the 95% Bias-Corrected and Accelerated (BCa) confidence intervals, please note that this process is time-consuming and requires a moderate amount of RAM due to the size of the dataset. To facilitate replication and further analysis, we have saved the bootstrapped results as .RDS files in the ``./Results`` folder. These files can be read directly using the code below if your computational resources are limited.
+For the estimation of the 95% Bias-Corrected and Accelerated (BCa) confidence intervals, please note that this process is time-consuming and requires a moderate amount of RAM due to the size of the dataset. To facilitate replication and further analysis, we have saved the bootstrapped results as .RDS files in the ``./BCa_Results`` folder. These files can be read directly using the code below if your computational resources are limited.
 
 ```r
   #filename: is the named for the specific rds file you want
-  bca_file <- readRDS("./Results/filename.rds")
+  bca_file <- readRDS("./BCa_Results/filename.rds")
 ```
 
 
