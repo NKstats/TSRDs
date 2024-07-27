@@ -10,9 +10,6 @@ library(pacman)
 p_load(tableone)
 require(tableone)
 
-# **********************************************************************
-# Uncomment everything in this chunk if you want to preprocess the raw data
-
 # file_names <- paste0("./data/Raw_Data/mhcld_puf_", 2013:2022, ".csv")
 # data_list <- list()
 # 
@@ -23,11 +20,10 @@ require(tableone)
 # 
 # data <- do.call(rbind, data_list)
 # rownames(data) <- NULL
-
+# 
 # data <- preprocess_data(data)
-# **********************************************************************
 
-# Load clean data (Comment out if you use the raw data to do the preprocessing)
+# Load clean data (Comment out if you preprocess the raw data yourself)
 data <- read.csv("./data/Cleaned_Data/mhcld_clean.csv")
 
 # Define covariates and exposure
