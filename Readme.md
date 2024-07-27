@@ -86,7 +86,7 @@ To work with the data, you have two options:
         # Preprocess the combined data using the function
         data <- preprocess_data(data)
         
-        # Load clean data (Comment out if you use the raw data to do the preprocessing)
+        # Load clean data (Comment out if you preprocess the raw data yourself)
         # data <- read.csv("./data/Cleaned_Data/mhcld_clean.csv")
         ```
 
