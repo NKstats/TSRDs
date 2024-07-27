@@ -71,7 +71,6 @@ print(bca_results)
 #bca = readRDS("./BCa_Results/BCa_NNEH.rds")
 
 
-
 # ODDS RATIO ESTIMATION
 
 odds_ratios <- odds_ratio_estimation(matched_data, covars)
