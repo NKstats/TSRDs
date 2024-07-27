@@ -67,7 +67,7 @@ To work with the data, you have two options:
 
     1. Download the public use files data for the years 2013 to 2022. Create a folder named ``Raw_Data`` within the ``data`` directory, and save the downloaded files in the ``./data/Raw_Data/`` path without altering their original filenames.
 
-    2. Once the data files have been downloaded, uncomment the codes below and execute the main.R script to preprocess the data.
+    2. Once the data files have been downloaded, uncomment the codes below in the main.R script and execute. Make sure to comment ``data <- read.csv("./data/Cleaned_Data/mhcld_clean.csv")`` out if you decide to do the preprocessing from scratch.
     
         ```r
         # Define file paths for the raw data files
@@ -85,6 +85,9 @@ To work with the data, you have two options:
         
         # Preprocess the combined data using the function
         data <- preprocess_data(data)
+        
+        # Load clean data (Comment out if you use the raw data to do the preprocessing)
+        # data <- read.csv("./data/Cleaned_Data/mhcld_clean.csv")
         ```
 
 
