@@ -68,7 +68,8 @@ outcomes <- c("Opioid", "Alcohol")
 bca_results <- estimate_bca(matched_data, outcomes, covars, measure = "NNEH")
 print(bca_results)
 
-#bca = readRDS("./BCa_Results/BCa_NNEH.rds")
+#bca = readRDS("./BCa_Results/BCa_ARI.rds")
+
 
 
 # ODDS RATIO ESTIMATION
