@@ -19,7 +19,7 @@ TSRD_Paper
 │   ├── visualizations.R
 │   └── main.R
 |
-├── Results
+├── BCa_Results
 │   ├── BCa_ARI.rds
 │   ├── BCa_NNEH.rds
 │   └── BCa_RR.rds
