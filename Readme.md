@@ -2,7 +2,7 @@
 
 ## Effect of TSRD on Opioid and Alcohol Dependence
 
-This repository contains the code and data for the manuscript "Opioid and alcohol dependence among patients with trauma and stress-related disorders: a population-based retrospective cohort study." (S. Eshun, M.K. Owusu, H. Baffoe, 2024). All estimations were carried out using R version 4.4.1 on macOS. You can replicate all the results presented in the paper, including figures and tables, using the provided scripts and data. The structure and the contents of this repository is defined below:
+This repository contains the code and data for the manuscript "Opioid and alcohol dependence among patients with trauma and stressor-related disorders: a population-based retrospective cohort study." (S. Eshun, H. Baffoe, 2024). All estimations were carried out using R version 4.4.1 on macOS. You can replicate all the results presented in the paper, including figures and tables, using the provided scripts and data. The structure and the contents of this repository is defined below:
 ```r
 TSRD_Paper
 |
@@ -22,15 +22,7 @@ TSRD_Paper
 ├── Results
 │   ├── BCa_ARI.rds
 │   ├── BCa_NNEH.rds
-│   ├── BCa_RR.rds
-│   ├── BCa.p0.rds
-│   └── BCa_p1.rds
-|
-├── Figures
-│   ├── Fig1.tif
-│   ├── Fig2.tif
-│   ├── Fig3.tf
-│   └── S1 Fig.tif
+│   └── BCa_RR.rds
 |
 ├── .gitignore
 |
@@ -73,9 +65,9 @@ To work with the data, you have two options:
 
     The raw data files are not included in this repository due to their large size. You can download the necessary data files from the official website: [SAMHSA (MH-CLD)](https://www.samhsa.gov/data/data-we-collect/mh-cld-mental-health-client-level-data). To replicate the data preparation process, follow these steps:
 
-    1. Download the public use files data for the years 2013 to 2022, create a folder ``Raw_Data`` inside the ``data`` folder and save the files in the ``./data/Raw_Data/`` directory. Don't change the file names after downloading them from the website.
+    1. Download the public use files data for the years 2013 to 2022. Create a folder named ``Raw_Data`` within the ``data`` directory, and save the downloaded files in the ``./data/Raw_Data/`` path without altering their original filenames.
 
-    2. After downloading the data files, run the ``data_preparation.R`` script to combine and preprocess the data:
+    2. Once the data files have been downloaded, uncomment the codes below and execute the main.R script to preprocess the data.
     
         ```r
         # Define file paths for the raw data files
@@ -90,9 +82,6 @@ To work with the data, you have two options:
         
         data <- do.call(rbind, data_list)
         rownames(data) <- NULL
-        
-        # Source the preprocessing function from the script
-        source("data_preparation.R")
         
         # Preprocess the combined data using the function
         data <- preprocess_data(data)
