@@ -2,7 +2,7 @@
 
 ## Effect of TSRD on Opioid and Alcohol Dependence
 
-This repository contains the code and data for our work "Opioid and alcohol dependence among patients with trauma and stressor-related disorders: a population-based retrospective cohort study." (S. Eshun, H. Baffoe, 2024). All estimations were carried out using R version 4.4.1 on macOS. You can replicate all the results presented in the paper, including figures and tables, using the provided scripts and data. The structure and the contents of this repository is defined below:
+This repository contains the code and data for our work "Opioid and alcohol dependence among patients with trauma and stressor-related disorders: a population-based retrospective cohort study." (S. Eshun, M.K. Owusu, H. Baffoe, 2024). All estimations were carried out using R version 4.4.1 on macOS. You can replicate all the results presented in the paper, including figures and tables, using the provided scripts and data. The structure and the contents of this repository is defined below:
 ```r
 TSRD_Paper
 |
