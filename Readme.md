@@ -4,7 +4,7 @@
 
 This repository contains the code and data for our work "Opioid and alcohol dependence among patients with trauma and stressor-related disorders: a population-based retrospective cohort study." (S. Eshun, M.K. Owusu, H. Baffoe, 2024). All estimations were carried out using R version 4.4.1 on macOS. You can replicate all the results presented in the paper, including figures and tables, using the provided scripts and data. The structure and the contents of this repository is defined below:
 ```r
-TSRD_Paper
+TSRDs
 |
 ├── data
 │   └── Cleaned_Data
@@ -23,8 +23,6 @@ TSRD_Paper
 │   ├── BCa_ARI.rds
 │   ├── BCa_NNEH.rds
 │   └── BCa_RR.rds
-|
-├── .gitignore
 |
 └── Readme.md
 ```
@@ -63,7 +61,7 @@ To work with the data, you have two options:
 
 2. **Download and preprocess the raw data from the original source:**
 
-    The raw data files are not included in this repository due to their large size. You can download the necessary data files from the official website: [SAMHSA (MH-CLD)](https://www.samhsa.gov/data/data-we-collect/mh-cld-mental-health-client-level-data). To replicate the data preparation process, follow these steps:
+    The raw data files are not included in this repository due to their large size. You can download the necessary data files from the official website: [SAMHSA (MH-CLD)](https://www.samhsa.gov/data/data-we-collect/mh-cld/datafiles). To replicate the data preparation process, follow these steps:
 
     1. Download the public use files data for the years 2013 to 2022. Create a folder named ``Raw_Data`` within the ``data`` directory, and save the downloaded files in the ``./data/Raw_Data/`` path without altering their original filenames.
 
