@@ -63,9 +63,11 @@ To work with the data, you have two options:
 
     The raw data files are not included in this repository due to their large size. You can download the necessary data files from the official website: [SAMHSA (MH-CLD)](https://www.samhsa.gov/data/data-we-collect/mh-cld/datafiles). To replicate the data preparation process, follow these steps:
 
-    1. Download the public use files data for the years 2013 to 2022. Create a folder named ``Raw_Data`` within the ``data`` directory, and save the downloaded files in the ``./data/Raw_Data/`` path without altering their original filenames.
+    1. Download the public use data files for the years 2013 to 2022. Be sure to select the **Delimited** file options.
+    
+    2. Once downloaded, the files will be in ZIP format. Unzip the files and create a folder named ``Raw_Data`` within the ``data`` directory, and move the CSV files to the ``./data/Raw_Data/`` folder without altering their original names.
 
-    2. Once the data files have been downloaded, uncomment the codes below in the main.R script and execute. Make sure to comment ``data <- read.csv("./data/Cleaned_Data/mhcld_clean.csv")`` out if you decide to do the preprocessing from scratch.
+    3. Once done, uncomment the codes below in the main.R script and execute. Make sure to comment ``data <- read.csv("./data/Cleaned_Data/mhcld_clean.csv")`` out if you decide to do the preprocessing from scratch.
     
         ```r
         # Define file paths for the raw data files
